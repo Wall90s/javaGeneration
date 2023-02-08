@@ -5,5 +5,5 @@
  * @author walla
  *
  */
-module Generation {
+module aula_01 {
 }
