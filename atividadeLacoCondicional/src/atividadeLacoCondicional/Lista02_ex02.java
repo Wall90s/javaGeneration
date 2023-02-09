@@ -52,7 +52,7 @@ public class Lista02_ex02 {
 			break;
 		}
 
-		novoSalario = salario + (reajuste * salario);
+		novoSalario = salario + ((reajuste / 100) * salario);
 		System.out.println("Salário: " + novoSalario);
 
 		leia.close();
