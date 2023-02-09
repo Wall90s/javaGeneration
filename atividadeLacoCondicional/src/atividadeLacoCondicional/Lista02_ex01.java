@@ -1,14 +1,16 @@
 package atividadeLacoCondicional;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Lista02_ex01 {
 
 	public static void main(String[] args) {
-		Scanner leia = new Scanner(System.in);
-		int codigo, quantidade, total;
-		int preco = 0;
 		
+		Scanner leia = new Scanner(System.in);
+		int codigo;
+		float total, quantidade, preco = 0;
+			
 		System.out.println("Por favor informe o código do produto: ");
 		codigo = leia.nextInt();
 		System.out.println("Por favor informe a quantidade de produtos: ");
@@ -46,7 +48,7 @@ public class Lista02_ex01 {
 		
 		if (preco !=  0 && quantidade > 0) {
 			total = preco * quantidade;
-			System.out.println("V alor total: " + total);
+			System.out.printf("Valor total: R$ %.2f", total);
 		} else {
 			System.out.println("Quantidade inválida");
 		}

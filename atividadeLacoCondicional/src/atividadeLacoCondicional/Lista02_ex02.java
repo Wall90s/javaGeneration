@@ -7,14 +7,14 @@ public class Lista02_ex02 {
 	public static void main(String[] args) {
 
 		Scanner leia = new Scanner(System.in);
-		String nome = new String();
+		String nome;
 		int cargo;
 		float novoSalario, salario;
 		float reajuste = 0;
 
 		System.out.println("Por favor informe  seu nome: ");
 		leia.skip("\\R?");
-		nome = leia.nextLine();
+		nome = leia.next();
 		System.out.println("Por favor informe o cargo: ");
 		cargo = leia.nextInt();
 		System.out.println("Por favor informe o salário: ");
