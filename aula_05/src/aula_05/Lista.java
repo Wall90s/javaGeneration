@@ -41,7 +41,7 @@ public class Lista {
 					notas.forEach(System.out::println);					
 				}
 				/*
-				 * Forma de imprimir utilizando Laço For 
+				 * Forma de imprimir utilizando Laço For-each
 				 * 		for (Double listaNota : notas) {
 				 * 		System.out.println(listaNota); 
 				 * 		}
