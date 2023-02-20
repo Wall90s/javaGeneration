@@ -70,8 +70,10 @@ public class Curso {
 		}
 
 		System.out.println("\n\t\t - Informações sobre o curso -");
-		System.out.println("Título: " + this.titulo + "\tDuração: " + this.duracao + "h");
-		System.out.println("Quantidade de alunos: " + this.qtdAlunos + "\t\t\tPeríodo: " + periodo);
+		System.out.println("Título: " + this.titulo);
+		System.out.println("Duração: " + this.duracao + "h");
+		System.out.println("Quantidade de alunos: " + this.qtdAlunos);
+		System.out.println("Período: " + periodo);
 		System.out.print("Professor(es): ");
 		
 		if(this.professores.isEmpty() == false) {
