@@ -2,25 +2,25 @@ package atividade04Farmacia;
 
 public class Farmacia {
 
-	private int id;
+	private long id;
 	private String nome;
 	private double preco;
 	private int categoria;
 	private boolean entrega;
 
-	public Farmacia(int id, String nome, double preco, int categoria, boolean receita) {
+	public Farmacia(long id, String nome, double preco, int categoria, boolean entrega) {
 		this.id = id;
 		this.nome = nome;
 		this.preco = preco;
 		this.categoria = categoria;
-		this.entrega = receita;
+		this.entrega = entrega;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -48,12 +48,12 @@ public class Farmacia {
 		this.categoria = categoria;
 	}
 
-	public boolean isReceita() {
+	public boolean isEntrega() {
 		return entrega;
 	}
 
-	public void setReceita(boolean receita) {
-		this.entrega = receita;
+	public void setEntrega(boolean entrega) {
+		this.entrega = entrega;
 	}
 
 	public void visualizar() {
