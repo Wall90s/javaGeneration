@@ -63,13 +63,19 @@ public class Farmacia {
 		} else {
 			entrega = "não";
 		}
+		
+		String categoria = "";
+		switch (this.categoria) {
+		case 1 -> categoria = "medicamento";
+		case 2 -> categoria = "perfumaria";
+		}
 
 		System.out.println("\n\t - Informações do Produto -");
 		System.out.println("ID: " + this.id);
 		System.out.println("Nome: " + this.nome);
 		System.out.printf("Preço: R$ %.2f", this.preco);
 		System.out.println();
-		System.out.println("Categoria: " + this.categoria);
+		System.out.println("Categoria: " + categoria);
 		System.out.println("Disponível para entrega: " + entrega);
 	}
 
