@@ -13,4 +13,3 @@ public class Exe01_dobraValor {
         System.out.println(numero * 2);
     }
 }
-
